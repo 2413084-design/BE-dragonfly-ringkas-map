@@ -11,3 +11,9 @@ generator client {
 datasource db {
   provider = "postgresql"
 }
+
+model Summary{
+  Summary_id String @id @default(uuid())
+  Title      String
+  Content    String
+}
